@@ -41,11 +41,11 @@ python SmartImplicitHub.py
 
 A window will appear that looks as follows:
 
-![00_start](/home/martina/_Code/Smart-Implicit-Hub_public/SmartImplicitHub/doc/00_start.png)
+![00_start](doc/00_start.png)
 
 If you have running implicit interaction-based devices, they should appear if you click on the *Discover* button.
 
-![01_discover](/home/martina/_Code/Smart-Implicit-Hub_public/SmartImplicitHub/doc/01_discover.png)
+![01_discover](doc/01_discover.png)
 
 The table shows their IP address, the OSC port, they will listening on, how many sensors and actuators a single device offers, if it is a sensor or an actuator, the OSC path, and also the range of their values (from%to).
 
@@ -55,7 +55,7 @@ If you want to run an already existing application like the "Soma Mattress". Jus
 
 This will lead you to the application tab, where you just have to press the desired application (currently there is only the "Soma Mattress").
 
-![02_application](/home/martina/_Code/Smart-Implicit-Hub_public/SmartImplicitHub/doc/02_application.png)
+![02_application](doc/02_application.png)
 
 #### Connecting Sensors Inputs and Actuators Manually
 
@@ -63,11 +63,11 @@ If you want to connect sensor inputs manually with actuators, select the desired
 
 This will lead you to the "Mapping" tab, where you can connect your sensors (y-axis) with your actuators (x-axis). 
 
-![03_mapping](/home/martina/_Code/Smart-Implicit-Hub_public/SmartImplicitHub/doc/03_mapping.png)
+![03_mapping](doc/03_mapping.png)
 
 If you select a sensor-actuator-pair a new dialog will open, asking you which mapping function you want to use.
 
-![04_module](/home/martina/_Code/Smart-Implicit-Hub_public/SmartImplicitHub/doc/04_module.png)
+![04_module](doc/04_module.png)
 
 Select one module and press save. The dialog will disappear. Now press the "Start OSC Service" button and your sensors should send its sensor readings to the "Hub" while the "Hub" forwards the modified values (according to the selected module) to the actuator.
 
