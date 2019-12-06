@@ -75,8 +75,43 @@ Select one module and press save. The dialog will disappear. Now press the "Star
 
  ## Code Layout
 
+### Example Devices
+
+You can find virtual example devices in the folder ```TestDevices```. Note that you can only run either one sensor or one actuator on your PC. Thus, you might need a second PC.
+
+``` FakeSensor.py``` is used to run an external device, e.g, an OSC app on your smart phone. You need to modify your sensor/actuator 
+
+```
+desc = {'sensor1': '/proximity:0%5'}
+```
+
+Furthermore, you need to change the IP address and the *listening* port. The outgoing port is always 3333.
+
+### Creating a new Application
+
+To create a new application, you can use the ``` SomaMattress.py``` as an example. For automatically selecting devices, and functions, we use a .csv file. An example can be found in ``` AppMatrix/SomaMattressMatrix.csv```.
+
+The file looks like this.
+
+| ServiceName                             | Sensor Address | Coords  | Actuator                            | Actuator Address | Module        | Argument |
+| --------------------------------------- | -------------- | ------- | ----------------------------------- | ---------------- | ------------- | -------- |
+| Python25PressureSensor._osc._udp.local. | /pressure1     | (0,0,0) | Python25MotorsGrid._osc._udp.local. | /motor1          | mattress_flat | -0,1     |
+| Python25PressureSensor._osc._udp.local. | /pressure1     | (0,0,1) | Python25MotorsGrid._osc._udp.local. | /motor2          | mattress_flat | (1,0.5)  |
+| Python25PressureSensor._osc._udp.local. | /pressure1     | (0,2,0) | Python25MotorsGrid._osc._udp.local. | /motor3          | mattress_flat | (2,0.5)  |
+| Python25PressureSensor._osc._udp.local. | /pressure1     | (0,3,0) | Python25MotorsGrid._osc._udp.local. | /motor4          | mattress_flat | (3,0.5)  |
+| Python25PressureSensor._osc._udp.local. | /pressure1     | (0,4,0) | Python25MotorsGrid._osc._udp.local. | /motor5          | mattress_flat | (4,0.5)  |
+
+Note that the Coords column is currently ignored. The Argument column provides (optional) parameters for the functions defined in the Module column.
+
+### Modules and Blocks
+
+A module describes a behavior (an output) based on an input. The behavior can be described with the help of so called blocks. Blocks are small, stateless functions. You can freely add blocks and modules to describe your desired behavior.
+
 ## Trouble Shooting
+
+* Are you connected with your local network?
+* Maybe reconnect to your router!
 
 ## Known Issues
 
-* The SomaMattress application does not allocate the sensors and actuators. Other SomoServers could allocate them, thus the sensors will send their data to the new server.
+* The Soma Mattress application does not allocate the sensors and actuators. Other "Hubs" could allocate them, thus the sensors will send their data to the new "Hub".
