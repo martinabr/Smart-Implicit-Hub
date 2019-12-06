@@ -161,7 +161,7 @@ if (client) {                             // if you get a client,
 }
 ```
 
-Your could, especially OSC related code should come after
+Your code, especially OSC related code should come after
 
 ```c++
 if (server_ready == true) {
