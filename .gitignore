@@ -2,3 +2,5 @@ SmartImplicitHub/.idea/
 SmartImplicitHub/venv/bin/
 SmartImplicitHub/venv/lib/
 SmartImplicitHub/venv/lib64/
+SomaPixel/Soma_Pixel1/arduino_secrets.h
+SomaPixel/Soma_Pixel2/arduino_secrets.h
