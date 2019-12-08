@@ -59,9 +59,13 @@ This will lead you to the application tab, where you just have to press the desi
 
 #### Connecting Sensors Inputs and Actuators Manually
 
-If you want to connect sensor inputs manually with actuators, select the desired device by clicking the checkbox next to it. If you run multiple "Hubs" in the local network, the selected devices should disappear on the other "Hubs". After selecting the desired devices klick "Save".
+If you want to connect sensor inputs manually with actuators, select the desired device by clicking the checkbox next to it. 
 
-This will lead you to the "Mapping" tab, where you can connect your sensors (y-axis) with your actuators (x-axis). 
+![03_mapping](doc/05_select.png)
+
+If you run multiple "Hubs" in the local network, the selected devices should disappear on the other "Hubs". After selecting the desired devices klick the "Save" button.
+
+This will lead you to the "Mapping" tab, where you can connect your sensors (y-axis) with your actuators (x-axis) by clicking on the corresponding checkboxes. 
 
 ![03_mapping](doc/03_mapping.png)
 
